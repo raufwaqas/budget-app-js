@@ -1,0 +1,29 @@
+/**
+* ! removing default styles of the browser
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #e5e5e5 !important;
+  display: grid;
+  place-content: center;
+  border:  2px solid red;
+}
+
+/**
+* ! style rules for app component
+*/
+
+.app{
+  width: 375px;
+  height: 700px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  background-color: #fff;
+}
