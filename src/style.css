@@ -13,17 +13,41 @@ body {
   background-color: #e5e5e5 !important;
   display: grid;
   place-content: center;
-  border:  2px solid red;
+  border: 2px solid red;
 }
 
 /**
 * ! style rules for app component
 */
 
-.app{
+.app {
   width: 375px;
   height: 700px;
   border: 2px solid gray;
   border-radius: 8px;
   background-color: #fff;
 }
+
+/**
+* ! style rules for topBar component
+*/
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.topBar__image {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+}
+
+.topBar__text {}
+
+.topBar__text--date {
+  font-size: 14px;
+}
+
+.topBar__text--name {}
