@@ -17,7 +17,7 @@
     />
     <title>Budget App</title>
   </head>
-  <body>
+  <body class="text-capitalize">
     <div class="app" id="app">
       <div class="topBar px-4 pt-4">
         <img class="topBar__image" src="src/images/portrait.png" alt="" />
@@ -30,6 +30,14 @@
       <div class="balanceComponent px-4 pt-3">
         <div class="balanceComponent__txt fw-light">Curent Balance</div>
         <div class="balanceComponent__balance fw-semibold fs-4"></div>
+      </div>
+
+      <div class="transaction px-4 py-2">
+        <div class="transaction__text">
+          <div class="transaction__text--title fw-semibold">transaction</div>
+          <div class="transaction__text--button fw-light">See All</div>
+        </div>
+        <div class="transaction__history py-4"></div>
       </div>
     </div>
   </body>

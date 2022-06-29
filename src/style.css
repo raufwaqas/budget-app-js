@@ -1,3 +1,7 @@
+:root{
+  --priamary-red: #C42D40;
+  --secondary-color: #2d8169
+}
 /**
 * ! removing default styles of the browser
 */
@@ -13,7 +17,6 @@ body {
   background-color: #e5e5e5 !important;
   display: grid;
   place-content: center;
-  border: 2px solid red;
 }
 
 /**
@@ -57,7 +60,7 @@ body {
 .topBar__text--name {}
 
 /**
-* ! style rules for topBar component
+* ! style rules for balance component
 */
 .balanceComponent {
   display: flex;
@@ -68,4 +71,54 @@ body {
 
 .balanceComponent__txt {
   font-size: 14px;
+}
+
+/**
+* ! style rules for transaction component
+*/
+
+[id ^="transaction__history--"] {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.transaction__text--button {
+  color: #2d8169;
+  font-size: 14px;
+}
+
+.transaction__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row__1,
+.row__2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row__1--date {
+  font-size: 12px;
+}
+
+.row__2--amount {}
+
+.row__1--date,
+.row__2--transID {
+  font-size: 12px;
+}
+
+.red {
+  color: var(--priamary-red)
+}
+
+.green {
+  color: #2d8169;
+}
+
+hr{
+  margin: 8px 0 !important;
 }
