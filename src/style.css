@@ -38,11 +38,15 @@ body {
   gap: 16px;
 }
 
+
 .topBar__image {
   width: 52px;
   height: 52px;
   border-radius: 100%;
 }
+
+
+
 
 .topBar__text {}
 
@@ -51,3 +55,17 @@ body {
 }
 
 .topBar__text--name {}
+
+/**
+* ! style rules for topBar component
+*/
+.balanceComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.balanceComponent__txt {
+  font-size: 14px;
+}
