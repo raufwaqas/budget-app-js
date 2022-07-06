@@ -1,4 +1,5 @@
 import { trasactionComponent } from "../transactionComponent.mjs"
+import {balanceCalculator} from'../balanceCalc.mjs'
 
 let storage = JSON.parse(localStorage.getItem('DB')) || []
 
@@ -11,6 +12,6 @@ export let submitBtn = (data, purpose, amount, submit) => {
   submit.click()
   submit.setAttribute('data-bs-dismiss', "")
 
-  trasactionComponent()
-  console.log(storage)
+  trasactionComponent(storage)
+  balanceCalculator(storage)
 }
