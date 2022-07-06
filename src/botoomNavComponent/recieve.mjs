@@ -1,8 +1,10 @@
 
 import { nanoid } from 'https://cdn.jsdelivr.net/npm/nanoid/nanoid.js'
+import { submitBtn } from './submitBtn.mjs'
 let recieve = document.querySelector('#modals__recieve')
 let from = document.querySelector('#modals__recieve--from')
 let amount = document.querySelector('#modals__recieve--amount')
+let submit = document.querySelector('.modals__recieve--submit')
 
 export let recieveComponent = () => {
   recieve.addEventListener('submit', (e) => {
@@ -14,6 +16,6 @@ export let recieveComponent = () => {
       amount: +amount.value,
       color: 'green'
     }
-    console.log(recieveData)
+    submitBtn(recieveData, from, amount, submit)
   })
 }

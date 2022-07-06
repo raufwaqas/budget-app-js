@@ -4,6 +4,6 @@ import { trasactionComponent } from './transactionComponent.mjs'
 import {bottomNavComponent } from './botoomNavComponent/index.mjs'
 getDateToday()
 balanceCalculator()
-trasactionComponent()
+// trasactionComponent()
 
 bottomNavComponent()
