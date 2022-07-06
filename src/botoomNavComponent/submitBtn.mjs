@@ -1,7 +1,10 @@
 import { trasactionComponent } from "../transactionComponent.mjs"
 
+let storage = JSON.parse(localStorage.getItem('DB')) || []
+
 export let submitBtn = (data, purpose, amount, submit) => {
-  localStorage.setItem('DB', JSON.stringify(data))
+  storage.push(data)
+  localStorage.setItem('DB', JSON.stringify(storage))
   purpose.value = ""
   amount.value = ""
   submit.setAttribute('data-bs-dismiss', "modal")
@@ -9,4 +12,5 @@ export let submitBtn = (data, purpose, amount, submit) => {
   submit.setAttribute('data-bs-dismiss', "")
 
   trasactionComponent()
+  console.log(storage)
 }
