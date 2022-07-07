@@ -35,7 +35,14 @@
       <div class="transaction px-4 py-2">
         <div class="transaction__text">
           <div class="transaction__text--title fw-semibold">transaction</div>
-          <div class="transaction__text--button fw-light">See All</div>
+          <div
+            class="transaction__text--button fw-light"
+            data-bs-toggle="modal"
+            data-bs-target="#transaction_text--view"
+            type="button"
+          >
+            See All
+          </div>
         </div>
         <div class="transaction__history py-4"></div>
       </div>
@@ -224,6 +231,23 @@
             </div>
           </div>
         </form>
+
+        <div class="modal fade" id="transaction_text--view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">All Transactions</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div id="see__all--results" class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

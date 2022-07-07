@@ -1,5 +1,6 @@
 import { trasactionComponent } from "../transactionComponent.mjs"
-import {balanceCalculator} from'../balanceCalc.mjs'
+import { balanceCalculator } from '../balanceCalc.mjs'
+import { viewAll } from "./seeAll.mjs"
 
 let storage = JSON.parse(localStorage.getItem('DB')) || []
 
@@ -14,4 +15,5 @@ export let submitBtn = (data, purpose, amount, submit) => {
 
   trasactionComponent(storage)
   balanceCalculator(storage)
+  viewAll(storage)
 }

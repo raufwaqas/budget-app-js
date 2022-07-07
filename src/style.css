@@ -166,3 +166,12 @@ hr {
   flex-direction: column;
   align-items: center;
 }
+
+/**
+* ! style rules for See All 
+*/
+
+#see__all--results {
+  height: 300px;
+  overflow-y: scroll;
+}
